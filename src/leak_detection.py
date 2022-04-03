@@ -1,6 +1,5 @@
 from typing import List
 
-
 class LeakDetection:
     """
     For correct automatic evaluation please implement your prediction logic inside this class
