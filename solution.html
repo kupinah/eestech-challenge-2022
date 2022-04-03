@@ -212,6 +212,25 @@
 <li><p>AdaBoost</p></li>
 <li><p>RandomForest</p></li>
 </ul>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">create_model</span><span class="p">():</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="s1">'./new_data2'</span>
+    <span class="n">dataset</span> <span class="o">=</span> <span class="n">merge_data</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+    <span class="n">dataset</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="n">y</span> <span class="o">=</span> <span class="n">dataset</span><span class="p">[</span><span class="s2">"Target"</span><span class="p">]</span>
+    <span class="n">dataset</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">'Target'</span><span class="p">,</span><span class="s1">'ds'</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="s1">'columns'</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">dataset</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+
+    <span class="n">fname</span> <span class="o">=</span> <span class="s2">"new_model3"</span>
+    
+    <span class="n">model</span> <span class="o">=</span> <span class="n">RF</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">(),</span> <span class="n">y_train</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">())</span>
+    <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Accuracy:"</span><span class="p">,</span> <span class="n">metrics</span><span class="o">.</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
+
+    <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="nb">open</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="s1">'wb'</span><span class="p">))</span>
+</pre></div>
+</div>
 <p>Variatons of model accuracy: 0.76 - ~0.6</p>
 <p><img alt="p2" src="_images/p2_orange.png"/></p>
 </section>
