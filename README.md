@@ -1,3 +1,3 @@
 GitHub Pages of [kupinah/eestech-challenge-2022](https://github.com/kupinah/eestech-challenge-2022.git)
 ===
-Sphinx html documentation of [c666c151](https://github.com/kupinah/eestech-challenge-2022/tree/c666c151043974c7cade253fa8c8e51e0c8f136e)
+Sphinx html documentation of [8f88bf9c](https://github.com/kupinah/eestech-challenge-2022/tree/8f88bf9ce579171f51716b1dc5971eb2080e2d92)
