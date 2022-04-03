@@ -1,10 +1,22 @@
 # Solution
 
 ## Phase 1
-You should describe your solution for Phase 1 here.
+Approaches:
+- most important features - scatter plot (Orange)
+- correlation of features
+- TSNE, MDS
+- Manually set threshold
+- Semisupervised learning with manually labeled instances
+
+Final result: MSE ~ 0.4
+![p1](imgs/p1_orange.png)
 
 ## Phase 2
-You should describe your solution for Phase 2 here.
+Approaches:
+- AdaBoost
+- RandomForest
+
+Variatons of model accuracy: 0.76 - ~0.6
 
 Example how to add images:
-![simple graph](imgs/simple_graph.PNG)
+![p2](imgs/p2_orange.png)
