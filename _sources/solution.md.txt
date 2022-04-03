@@ -9,6 +9,7 @@ Approaches:
 - Semisupervised learning with manually labeled instances
 
 Final result: MSE ~ 0.4
+
 ![p1](imgs/p1_orange.png)
 
 ## Phase 2
@@ -18,5 +19,4 @@ Approaches:
 
 Variatons of model accuracy: 0.76 - ~0.6
 
-Example how to add images:
 ![p2](imgs/p2_orange.png)
