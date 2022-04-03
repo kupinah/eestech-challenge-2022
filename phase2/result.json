@@ -1,0 +1,15 @@
+{"prediction_results": [
+    {"file_name": "scenario_week_example_58.csv", "end_periods": [22076, 64557], "leakages": [1, 0]},
+    {"file_name": "scenario_week_example_59.csv", "end_periods": [23025, 63295], "leakages": [1, 0]},
+    {"file_name": "scenario_week_example_61.csv", "end_periods": [16762, 33402], "leakages": [0, 1]},
+    {"file_name": "scenario_week_example_62.csv", "end_periods": [60480], "leakages": [0]},
+    {"file_name": "scenario_week_example_66.csv", "end_periods": [20130, 33200], "leakages": [0, 1]},
+    {"file_name": "scenario_week_example_67.csv", "end_periods": [19232, 23094], "leakages": [0, 1]},
+    {"file_name": "scenario_week_example_71.csv", "end_periods": [18832, 21223], "leakages": [0, 1]},
+    {"file_name": "scenario_week_example_72.csv", "end_periods": [19992, 24034], "leakages": [0, 1]},
+    {"file_name": "scenario_week_example_73.csv", "end_periods": [60480], "leakages": [0]},
+    {"file_name": "scenario_week_example_74.csv", "end_periods": [13320], "leakages": [1]},
+    {"file_name": "scenario_week_example_83.csv", "end_periods": [19023, 24114], "leakages": [0, 1]},
+    {"file_name": "scenario_week_example_84.csv", "end_periods": [23100, 27023], "leakages": [1, 0]},
+    {"file_name": "scenario_week_example_85.csv", "end_periods": [15205, 18923], "leakages": [0, 1]}
+]}
