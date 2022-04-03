@@ -12,6 +12,8 @@ Final result: MSE ~ 0.4
 
 ![p1](imgs/p1_orange.png)
 
+![p2](imgs/p1_org.png)
+
 ## Phase 2
 Approaches:
 - AdaBoost
